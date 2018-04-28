@@ -1,0 +1,92 @@
+.header {
+  padding: 16px 0;
+  &__wrap {
+    justify-content: space-between;
+  }
+
+  &__logo-nav {
+    align-items: center;
+  }
+
+  &__info-block {
+    align-items: center;
+  }
+
+  &__comparison {
+    align-items: center;
+  }
+
+  &__icon-comparison {
+    position: relative;
+  }
+
+  &__logo {
+    margin-right: 40px;
+  }
+
+  &__nav {
+    a {
+      margin-right: 24px;
+      color: $accent-color;
+    }
+    a:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__comparison {
+    margin-right: 24px;
+    a {
+      color: $accent-color;
+    }
+  }
+
+  &__icon-comparison {
+    background: url("../img/icon-comparison.png") no-repeat;
+    width: 18px;
+    height: 12px;
+    margin-right: 11px;
+  }
+
+  &__icon-comparison-num {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: -9px;
+    right: -7px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 17px;
+    background-color: $accent-color;
+  }
+
+  &__personal-area {
+    border: 1px solid #ddddde;
+    border-radius: 15px;
+    padding: 8px 32px 8px 17px;
+    position: relative;
+    margin-right: 24px;
+    color: #53565a;
+  }
+
+  &__personal-area:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 6px solid #808080;
+    top: 12px;
+    right: 10px;
+  }
+
+  &__phone {
+    align-items: center;
+    p {
+      margin-right: 9px;
+    }
+  }
+}
+

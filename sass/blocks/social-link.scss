@@ -1,0 +1,13 @@
+.social-link {
+  &__icon {
+    font-size: 18px;
+    margin-right: 23px;
+    a {
+      color: $accent-color;
+    }
+  }
+
+  &__icon:last-child {
+    margin-right: 0;
+  }
+}

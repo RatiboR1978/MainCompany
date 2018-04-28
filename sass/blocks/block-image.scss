@@ -1,0 +1,35 @@
+.block-image {
+  width: 100%;
+  height: 232px;
+  background: url("../img/bg.jpg") no-repeat center;
+  background-size: cover;
+  margin-bottom: 66px;
+  &__wrap {
+    position: relative;
+    height: 232px;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 0;
+    left: 54px;
+    p {
+      font-family: "Vida 33 Pro", Arial, sans-serif;
+      background-color: white;
+      margin: 0;
+      font-size: 18px;
+      padding: 15px 25px 0 20px;
+    }
+    p:first-child {
+      max-width: 89px;
+      color: #777b80;
+      line-height: 15px;
+    }
+    p:last-child {
+      font-size: 48px;
+      padding: 20px 41px 9px 20px;
+      color: #414141;
+      line-height: 53px;
+    }
+  }
+}

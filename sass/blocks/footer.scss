@@ -1,0 +1,46 @@
+.footer {
+  padding: 40px 0 47px;
+  &__wrap {
+    padding: 0 113px;
+    justify-content: space-between;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__info-contacts {
+    margin-top: 43px;
+  }
+
+  &__info-phone {
+    font-family: "Vida 33 Pro", Arial, sans-serif;
+    font-size: 24px;
+    color: #424242;
+  }
+
+  &__info-address {
+    margin: 18px 0 10px;
+
+  }
+
+  &__info-email {
+    color: $accent-color;
+  }
+
+  &__section {
+    h3 {
+      margin-top: 0;
+      margin-bottom: 22px;
+    }
+    a {
+      line-height: 24px;
+      color: $accent-color;
+    }
+  }
+
+  &__section-empty {
+    margin-top: 38px;
+  }
+}

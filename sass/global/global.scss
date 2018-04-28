@@ -1,0 +1,35 @@
+body {
+  position: relative;
+  font-family: "Vida 31 Pro", Arial, sans-serif;
+  font-size: $font-size-desktop;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix:after {
+content: "";
+display: table;
+clear: both;
+}
+
+h1, h2, h3 {
+  font-family: "Vida 33 Pro", Arial, sans-serif;
+}
+
+.container {
+  max-width: 1350px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+}
