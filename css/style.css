@@ -409,6 +409,12 @@ h1, h2, h3 {
       max-width: 1350px;
       padding: 0 5px; } }
 
+@media (min-width: 1280px) {
+  .container-news {
+    margin: 0 auto;
+    max-width: 1350px;
+    padding: 0 5px; } }
+
 .wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -925,17 +931,41 @@ label .menu-item:nth-child(3) {
 .news {
   padding: 30px 0 50px;
   background-color: #edeeee;
-  margin-top: 80px; }
+  margin-top: 80px;
+  overflow: hidden;
+  height: 120px; }
+  @media (min-width: 1280px) {
+    .news {
+      overflow: visible;
+      height: 96px; } }
   .news__wrap {
-    padding: 0 113px;
+    padding: 0 113px 0 6%;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    white-space: pre-line;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 200px; }
+    @media (min-width: 1280px) {
+      .news__wrap {
+        padding: 0 113px;
+        overflow-x: visible;
+        overflow-y: visible;
+        white-space: normal; } }
   .news__item {
-    max-width: 222px; }
+    max-width: 222px;
+    height: 22px;
+    margin-right: 76px; }
+    @media (min-width: 1280px) {
+      .news__item {
+        margin-right: 0; } }
     .news__item time {
       opacity: .4; }
+    .news__item p {
+      width: 200px;
+      height: 200px; }
   .news__item-wrap {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -957,7 +987,7 @@ label .menu-item:nth-child(3) {
     line-height: 20px; }
   .news__item-title-green {
     font-family: "Vida 33 Pro", Arial, sans-serif;
-    padding: 0px 20px;
+    padding: 0 20px;
     background-color: #c5e71b;
     position: relative; }
   .news__item-title-green:before {

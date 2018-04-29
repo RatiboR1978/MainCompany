@@ -2,15 +2,40 @@
   padding: 30px 0 50px;
   background-color: #edeeee;
   margin-top: 80px;
+  overflow: hidden;
+  height: 120px;
+  @media (min-width: 1280px) {
+    overflow: visible;
+    height: 96px;
+  }
   &__wrap {
-    padding: 0 113px;
+    padding: 0 113px 0 6%;
     justify-content: space-between;
+    white-space: pre-line;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 200px;
+    @media (min-width: 1280px) {
+      padding: 0 113px;
+      overflow-x: visible;
+      overflow-y: visible;
+      white-space: normal;
+    }
   }
 
   &__item {
     max-width: 222px;
+    height: 22px;
+    margin-right: 76px;
+    @media (min-width: 1280px) {
+      margin-right: 0;
+    }
     time {
       opacity: .4;
+    }
+    p {
+      width: 200px;
+      height: 200px;
     }
   }
 
@@ -32,7 +57,7 @@
 
   &__item-title-green {
     font-family: "Vida 33 Pro", Arial, sans-serif;
-    padding: 0px 20px;
+    padding: 0 20px;
     background-color: #c5e71b;
     position: relative;
   }

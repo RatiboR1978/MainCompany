@@ -33,6 +33,14 @@ h1, h2, h3 {
   }
 }
 
+.container-news {
+  @media (min-width: 1280px) {
+    margin: 0 auto;
+    max-width: 1350px;
+    padding: 0 5px;
+  }
+}
+
 .wrap {
   display: flex;
   justify-content: center;
