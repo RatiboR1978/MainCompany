@@ -5,7 +5,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>MainCompany</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -32,11 +32,43 @@
             <a href="#">Сравнение</a>
           </div>
           <a class="header__personal-area" href="#">Личный кабинет</a>
-          <div class="header__phone wrap">
+          <div class="header__phone wrap header__phone-js">
             <p>+7 000 000-00-00</p>
             <a href="tel:+70000000000"><img src="img/phone.png" alt="phone"></a>
           </div>
+          <div class="header__logo-mob">
+            <div class="menu-wrap">
+              <input type="checkbox" id="menu1" />
+              <label for="menu1" class="menu">
+                <div class="menu-item"></div>
+                <div class="menu-item"></div>
+                <div class="menu-item"></div>
+              </label>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="header__wrap-mob">
+        <nav class="header__menu-mob" style="">
+          <ul class="header__list-mob">
+            <li><a href="#">Раздел №1</a></li>
+            <li><a href="#">Раздел №2</a></li>
+            <li><a href="#">Раздел №3</a></li>
+            <li><a href="#">Раздел №4</a></li>
+            <li><a href="#">Раздел №5</a></li>
+          </ul>
+          <div class="header__comparison wrap header__icon-comparison-js">
+            <div class="header__icon-comparison-mob">
+              <div class="header__icon-comparison-num">3</div>
+            </div>
+            <a href="#">Сравнение</a>
+          </div>
+          <a class="header__personal-area-mob" href="#">Личный кабинет</a>
+          <div class="header__phone wrap header__phone-menu">
+            <p>+7 000 000-00-00</p>
+            <a href="tel:+70000000000"><img src="img/phone.png" alt="phone"></a>
+          </div>
+        </nav>
       </div>
     </div>
   </header>
@@ -51,33 +83,39 @@
     </div>
   </section>
   <section class="main">
-    <div class="container wrap">
+    <div class="container wrap main__wrap">
       <aside class="aside">
         <div class="aside__nav">
-          <ul>
+          <div class="aside__nav-item aside__nav-item--active aside__nav-notice aside__but">
+            <div class="aside__notice-num">5</div>
+            <a href="#">Уведомления</a>
+          </div>
+          <ul class="aside__nav-list">
             <li class="aside__nav-item"><a href="#">Документы</a></li>
             <li class="aside__nav-item"><a href="#">План</a></li>
             <li class="aside__nav-item"><a href="#">Оплата</a></li>
             <li class="aside__nav-item"><a href="#">Стадии</a></li>
             <li class="aside__nav-item"><a href="#">Online</a></li>
             <li class="aside__nav-item"><a href="#">Инструкция</a></li>
-            <li class="aside__nav-item aside__nav-item--active aside__nav-notice">
+            <li class="aside__nav-item aside__nav-item--active aside__nav-notice aside__nav-hidden">
               <div class="aside__notice-num">5</div>
               <a href="#">Уведомления</a></li>
           </ul>
         </div>
-        <div class="aside__address">
-          <h3>Адрес 123</h3>
-          <div class="aside__text wrap">
-            <p>Адрес 123</p>
-            <a class="aside__link" href="#">Перейти</a>
+        <div class="aside__wrap wrap">
+          <div class="aside__address">
+            <h3>Адрес 123</h3>
+            <div class="aside__text wrap">
+              <p>Адрес 123</p>
+              <a class="aside__link" href="#">Перейти</a>
+            </div>
           </div>
-        </div>
-        <div class="aside__address">
-          <h3>Адрес 123</h3>
-          <div class="aside__text wrap">
-            <p>Адрес 123</p>
-            <a class="aside__link" href="#">Перейти</a>
+          <div class="aside__address">
+            <h3>Адрес 123</h3>
+            <div class="aside__text wrap">
+              <p>Адрес 123</p>
+              <a class="aside__link" href="#">Перейти</a>
+            </div>
           </div>
         </div>
       </aside>
@@ -189,43 +227,45 @@
             <a class="footer__info-email" href="mailto:post@comp.com">post@comp.com</a>
           </div>
         </div>
-        <div class="footer__section">
-          <h3>Раздел №1</h3>
-          <ul>
-            <li><a href="#">Подраздел №1</a></li>
-            <li><a href="#">Подраздел №2</a></li>
-            <li><a href="#">Подраздел №3</a></li>
-            <li><a href="#">Подраздел №4</a></li>
-            <li><a href="#">Подраздел №5</a></li>
-            <li><a href="#">Подраздел №6</a></li>
-          </ul>
-        </div>
-        <div class="footer__section">
-          <h3>Раздел №2</h3>
-          <ul>
-            <li><a href="#">Подраздел №1</a></li>
-            <li><a href="#">Подраздел №2</a></li>
-            <li><a href="#">Подраздел №3</a></li>
-            <li><a href="#">Подраздел №4</a></li>
-          </ul>
-        </div>
-        <div class="footer__section">
-          <h3>Раздел №3</h3>
-          <ul>
-            <li><a href="#">Подраздел №1</a></li>
-            <li><a href="#">Подраздел №2</a></li>
-            <li><a href="#">Подраздел №3</a></li>
-            <li><a href="#">Подраздел №4</a></li>
-            <li><a href="#">Подраздел №5</a></li>
-            <li><a href="#">Подраздел №6</a></li>
-          </ul>
-        </div>
-        <div class="footer__section footer__section-empty">
-          <ul>
-            <li><a href="#">Подраздел №1</a></li>
-            <li><a href="#">Подраздел №2</a></li>
-            <li><a href="#">Подраздел №3</a></li>
-          </ul>
+        <div class="footer__section-wrap wrap">
+          <div class="footer__section">
+            <h3>Раздел №1</h3>
+            <ul>
+              <li><a href="#">Подраздел №1</a></li>
+              <li><a href="#">Подраздел №2</a></li>
+              <li><a href="#">Подраздел №3</a></li>
+              <li><a href="#">Подраздел №4</a></li>
+              <li><a href="#">Подраздел №5</a></li>
+              <li><a href="#">Подраздел №6</a></li>
+            </ul>
+          </div>
+          <div class="footer__section">
+            <h3>Раздел №2</h3>
+            <ul>
+              <li><a href="#">Подраздел №1</a></li>
+              <li><a href="#">Подраздел №2</a></li>
+              <li><a href="#">Подраздел №3</a></li>
+              <li><a href="#">Подраздел №4</a></li>
+            </ul>
+          </div>
+          <div class="footer__section">
+            <h3>Раздел №3</h3>
+            <ul>
+              <li><a href="#">Подраздел №1</a></li>
+              <li><a href="#">Подраздел №2</a></li>
+              <li><a href="#">Подраздел №3</a></li>
+              <li><a href="#">Подраздел №4</a></li>
+              <li><a href="#">Подраздел №5</a></li>
+              <li><a href="#">Подраздел №6</a></li>
+            </ul>
+          </div>
+          <div class="footer__section footer__section-empty">
+            <ul>
+              <li><a href="#">Подраздел №1</a></li>
+              <li><a href="#">Подраздел №2</a></li>
+              <li><a href="#">Подраздел №3</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

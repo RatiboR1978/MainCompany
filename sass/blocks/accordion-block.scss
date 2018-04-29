@@ -1,8 +1,12 @@
 .accordion-block {
-  padding-left: 40px;
   width:100%;
   max-width: 874px;
   padding-bottom: 35px;
+  padding-top: 90px;
+  @media (min-width: 1280px) {
+    padding-top: 0;
+    padding-left: 40px;
+  }
   &__title {
     font-size: 36px;
     color: #414141;

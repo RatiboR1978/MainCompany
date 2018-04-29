@@ -1,0 +1,9 @@
+.main {
+  &__wrap {
+    flex-direction: column;
+    @media (min-width: 1280px) {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}

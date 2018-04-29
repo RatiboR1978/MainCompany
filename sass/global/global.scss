@@ -24,9 +24,13 @@ h1, h2, h3 {
 }
 
 .container {
-  max-width: 1350px;
-  padding: 0 5px;
+  max-width: 688px;
+  padding: 0 40px;
   margin: 0 auto;
+  @media (min-width: 1280px) {
+    max-width: 1350px;
+    padding: 0 5px;
+  }
 }
 
 .wrap {

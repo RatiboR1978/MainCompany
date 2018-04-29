@@ -26,10 +26,13 @@
       line-height: 15px;
     }
     p:last-child {
-      font-size: 48px;
+      font-size: 32px;
       padding: 20px 41px 9px 20px;
       color: #414141;
       line-height: 53px;
+      @media (min-width: 1280px) {
+        font-size: 48px;
+      }
     }
   }
 }
