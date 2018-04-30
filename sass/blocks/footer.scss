@@ -2,7 +2,11 @@
   padding: 40px 0 47px;
   &__wrap {
     padding: 0;
+    flex-direction: column;
     justify-content: space-between;
+    @media (min-width:768px) {
+      flex-direction: row;
+    }
     @media (min-width: 1280px) {
       padding: 0 113px;
     }
@@ -16,9 +20,6 @@
   &__info-contacts {
     margin-top: 43px;
     min-width: 204px;
-    @media (min-width: 1280px) {
-
-    }
   }
 
   &__info-phone {
@@ -37,7 +38,13 @@
   }
 
   &__section {
-    margin-right: 79px;
+    width: 100%;
+    text-align: center;
+    @media (min-width:768px) {
+      width: 100px;
+      text-align: start;
+      margin-right: 66px;
+    }
     h3 {
       margin-top: 0;
       margin-bottom: 22px;
@@ -52,7 +59,9 @@
   }
 
   &__section:nth-child(1) {
-    margin-bottom: 54px;
+    @media (min-width:768px) {
+      margin-bottom: 54px;
+    }
   }
 
   &__section:last-child {
@@ -63,14 +72,43 @@
 
   &__section-empty {
     margin-top: 38px;
+    display: none;
+    @media (min-width: 767px) {
+      display: block;
+    }
   }
 
   &__section-wrap {
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin-left: 135px;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width:768px) {
+      align-items: flex-start;
+      flex-direction: row;
+      margin-left: 135px;
+      flex-wrap: wrap;
+    }
     @media (min-width: 1280px) {
       margin-left: 0;
+    }
+  }
+
+  &__title {
+    border: 1px solid #edeeee;
+    border-radius: 26px;
+    padding: 14px 0;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    @media (min-width: 768px) {
+      border: none;
+    }
+  }
+
+  &__list {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
     }
   }
 }

@@ -13,6 +13,10 @@
     position: absolute;
     bottom: 0;
     left: 54px;
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+    }
     p {
       font-family: "Vida 33 Pro", Arial, sans-serif;
       background-color: white;

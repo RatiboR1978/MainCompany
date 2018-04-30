@@ -1,5 +1,18 @@
 .header {
   padding: 16px 0;
+  &__container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 40px;
+    @media (min-width: 768px) {
+      max-width: 768px;
+      padding: 0 40px;
+    }
+    @media (min-width: 1280px) {
+      max-width: 100%;
+
+    }
+  }
   &__wrap {
     justify-content: space-between;
   }
@@ -103,7 +116,11 @@
   }
 
   &__phone {
+    margin-right: 66px;
     align-items: center;
+    @media (min-width: 1280px) {
+      margin-right: 0;
+    }
     p {
       margin-right: 9px;
     }
@@ -122,7 +139,10 @@
       margin: 0;
       padding: 0;
       padding-top: 80px;
-      padding-bottom: 200px;
+      padding-bottom: 443px;
+      @media (min-width: 768px) {
+        padding-bottom: 200px;
+      }
     }
     li {
       list-style-type: none;
@@ -236,7 +256,7 @@ label {
 .menu{
   position: absolute;
   top: 17px;
-  left: 40px;
+  left: 5px;
   height:30px;
   width:32px;
   transform: translate(-50%,-50%);

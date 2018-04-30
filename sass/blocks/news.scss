@@ -9,12 +9,15 @@
     height: 96px;
   }
   &__wrap {
-    padding: 0 113px 0 6%;
-    justify-content: space-between;
-    white-space: pre-line;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    height: 200px;
+    height: 140px;
+    @media (min-width: 768px) {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: pre-line;
+      padding: 0 113px 0 6%;
+      justify-content: space-between;
+      height: 200px;
+    }
     @media (min-width: 1280px) {
       padding: 0 113px;
       overflow-x: visible;
@@ -24,9 +27,15 @@
   }
 
   &__item {
-    max-width: 222px;
+    margin-right: 0;
+    width: 100%;
+    display: none;
     height: 22px;
-    margin-right: 76px;
+    @media (min-width: 768px) {
+      display: block;
+      max-width: 222px;
+      margin-right: 76px;
+    }
     @media (min-width: 1280px) {
       margin-right: 0;
     }
@@ -34,14 +43,28 @@
       opacity: .4;
     }
     p {
-      width: 200px;
-      height: 200px;
+      font-size: 22px;
+      line-height: 28px;
+      margin-top: 0;
+      @media (min-width: 768px) {
+        line-height: 18px;
+        font-size: 14px;
+        width: 200px;
+        height: 200px;
+      }
     }
+  }
+
+  &__item:first-child {
+    display: block;
   }
 
   &__item-wrap {
     justify-content: flex-start;
     align-items: center;
+    @media (max-width: 768px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__item-title {
@@ -84,5 +107,44 @@
     border-bottom: 10px solid transparent;
     top: 0;
     right: 0;
+  }
+
+  &__buttons {
+    text-align: center;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+  &__button--active {
+    background-color: #bebebe;
+  }
+
+  &__button:last-child {
+    margin-right: 0;
+  }
+
+  &__mob {
+    display: flex;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__desktop {
+    display: none;
+    @media (min-width: 768px) {
+      display: flex;
+    }
   }
 }

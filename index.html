@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="header">
-    <div class="container">
+    <div class="header__container">
       <div class="header__wrap wrap">
         <div class="header__logo-nav wrap">
           <div class="header__logo">
@@ -87,8 +87,10 @@
       <aside class="aside">
         <div class="aside__nav">
           <div class="aside__nav-item aside__nav-item--active aside__nav-notice aside__but">
-            <div class="aside__notice-num">5</div>
-            <a href="#">Уведомления</a>
+            <div class="aside__notice-wrap">
+              <div class="aside__notice-num">5</div>
+              <a href="#">Уведомления</a>
+            </div>
           </div>
           <ul class="aside__nav-list">
             <li class="aside__nav-item"><a href="#">Документы</a></li>
@@ -178,7 +180,7 @@
   </section>
   <section class="news">
     <div class="container-news">
-      <div class="news__wrap wrap">
+      <div class="news__wrap wrap news__desktop">
         <article class="news__item">
           <div class="news__item-wrap wrap">
             <time>14/07</time>
@@ -208,6 +210,37 @@
           <p>Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.</p>
         </article>
       </div>
+      <div class="news__wrap wrap news__mob">
+        <article class="news__item news__item-mob">
+          <div class="news__item-wrap wrap">
+            <time>14/07</time>
+            <h4 class="news__item-title news__item-title-green">Акция</h4>
+          </div>
+          <p>Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.</p>
+        </article>
+        <article class="news__item news__item-mob">
+          <div class="news__item-wrap wrap">
+            <time>14/07</time>
+            <h4 class="news__item-title">Новости</h4>
+          </div>
+          <p>Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.</p>
+        </article>
+        <article class="news__item news__item-mob">
+          <div class="news__item-wrap wrap">
+            <time>14/07</time>
+            <h4 class="news__item-title">Акции</h4>
+          </div>
+          <p>Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.</p>
+        </article>
+        <article class="news__item news__item-mob">
+          <div class="news__item-wrap wrap">
+            <time>14/07</time>
+            <h4 class="news__item-title">События</h4>
+          </div>
+          <p>Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.</p>
+        </article>
+      </div>
+      <div class="news__buttons"></div>
     </div>
   </section>
   <footer class="footer">
@@ -229,8 +262,8 @@
         </div>
         <div class="footer__section-wrap wrap">
           <div class="footer__section">
-            <h3>Раздел №1</h3>
-            <ul>
+            <h3 class="footer__title">Раздел №1</h3>
+            <ul class="footer__list">
               <li><a href="#">Подраздел №1</a></li>
               <li><a href="#">Подраздел №2</a></li>
               <li><a href="#">Подраздел №3</a></li>
@@ -240,8 +273,8 @@
             </ul>
           </div>
           <div class="footer__section">
-            <h3>Раздел №2</h3>
-            <ul>
+            <h3 class="footer__title">Раздел №2</h3>
+            <ul class="footer__list">
               <li><a href="#">Подраздел №1</a></li>
               <li><a href="#">Подраздел №2</a></li>
               <li><a href="#">Подраздел №3</a></li>
@@ -249,8 +282,8 @@
             </ul>
           </div>
           <div class="footer__section">
-            <h3>Раздел №3</h3>
-            <ul>
+            <h3 class="footer__title">Раздел №3</h3>
+            <ul class="footer__list">
               <li><a href="#">Подраздел №1</a></li>
               <li><a href="#">Подраздел №2</a></li>
               <li><a href="#">Подраздел №3</a></li>
